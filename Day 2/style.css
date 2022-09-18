@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --main-col: #3498db;
+	--transition-time: .3s;
+}
+
+body {
+	background-color: #f6f7fb;
+}
+
+.main-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sub-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	background-color: #fff;
+	border: 0.3rem solid #d3d3d3;
+	color: gray;
+	transition: border-color var(--transition-time);
+}
+
+.circle1 {
+    border-color: var(--main-col);
+}
+
+.line {
+	width: 6rem;
+	height: 0.3rem;
+	background-color: lightgrey;
+}
+
+.inner-line {
+	background-color: var(--main-col);
+	height: 100%;
+	width: 0;
+	transition: width var(--transition-time);
+}
+
+.btn-container {
+	margin-top: 2rem;
+}
+
+button {
+	padding: 0.7rem 0;
+	width: 5.5rem;
+	background-color: var(--main-col);
+	color: #fff;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+button[disabled] {
+	background-color: lightgrey;
+	cursor: default;
+	pointer-events: none;
+}
