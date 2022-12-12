@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 3px solid green; */
+}
+
+@font-face {
+	font-family: lato;
+	src: url(fonts/lato/Lato-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: lato;
+	src: url(fonts/lato/Lato-Bold.ttf);
+	font-weight: 700;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	bottom: 3rem;
+	z-index: 100;
+}
+
+ul {
+	list-style-type: none;
+	color: white;
+	font-size: larger;
+}
+
+ul li {
+	margin: 3rem 0;
+	transition: all 1s;
+	transform: translateX(-10rem);
+}
+
+ul li span {
+	margin-left: .5rem;
+}
+
+body {
+	font-family: lato, sans-serif;
+	color: #333;
+	background-color: #333;
+	overflow-x: hidden;
+}
+
+.nav-btn {
+	background-color: #ff7979;
+	color: white;
+	border-radius: 50%;
+	position: fixed;
+	width: 12rem;
+	height: 12rem;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	transform-origin: 0% 0%;
+	transition: 1s;
+	z-index: 100;
+}
+
+.nav-btn .icon-container {
+	display: block !important;
+	position: absolute !important;
+	cursor: pointer;
+}
+
+.nav-btn .icon-container.bars {
+	right: 3rem;
+	bottom: 2rem;
+}
+
+.nav-btn .icon-container.x {
+	left: 3rem;
+	bottom: 2rem;
+	transform: rotate(80deg);
+}
+
+figcaption {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+p {
+	margin: 1.5rem 0;
+	line-height: 1.5rem;
+	font-size: 1.1rem;
+}
+
+main {
+	background-color: white;
+	max-width: 70rem;
+	margin: auto;
+	padding: 6rem 3rem;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	transition: all 1s;
+	transform-origin: 0 0;
+}
